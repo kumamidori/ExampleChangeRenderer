@@ -6,6 +6,10 @@ use BEAR\Resource\ResourceObject;
 require dirname(__DIR__) . '/bin/autoload.php';
 
 /* @global string $context */
+if (strpos($_SERVER['REQUEST_URI'], '/api/') !== false) {
+    $context = 'app';
+}
+
 $app = (new Bootstrap)->getApp('Kumamidori\ExampleChangeRenderer', $context, dirname(__DIR__));
 $request = $app->router->match($GLOBALS, $_SERVER);
 

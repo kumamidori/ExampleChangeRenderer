@@ -7,9 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class ModuleTest extends TestCase
 {
-    /**
-     * @dataProvider
-     */
     public function contextsProvider()
     {
         return [
@@ -19,8 +16,10 @@ class ModuleTest extends TestCase
 
     /**
      * @dataProvider contextsProvider
+     *
+     * @param string $contexts
      */
-    public function testNewApp(string $contexts)
+    public function testNewApp($contexts)
     {
         $app = (new Bootstrap())->getApp(__NAMESPACE__, $contexts);
         $this->assertInstanceOf(AbstractApp::class, $app);
