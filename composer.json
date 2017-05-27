@@ -7,7 +7,8 @@
         "php": ">=5.6",
         "roave/security-advisories": "dev-master",
         "bear/package": "^1.2.2",
-        "josegonzalez/dotenv": "^2.1"
+        "josegonzalez/dotenv": "^2.1",
+        "madapaja/twig-module": "~1.1"
     },
     "require-dev": {
         "bear/qatools": "^1.4.2",
