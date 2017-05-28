@@ -1,30 +1,13 @@
-# Kumamidori.ExampleChangeRenderer
+[![Build Status](https://travis-ci.org/kumamidori/ExampleChangeRenderer.svg?branch=master)](https://travis-ci.org/kumamidori/ExampleChangeRenderer)
 
-## Installation
+# BEAR.Sunday リソース単位でレンダラーを変更するサンプル
 
-    composer install
+[bearsunday/BEAR\.Sunday](https://github.com/bearsunday/BEAR.Sunday) のサンプルアプリケーション
 
-## Usage
+## Links
 
-### Run server
+- [\[Practical BEAR\.Sunday\] リソース単位でレンダラーを変更する方法 \- Qiita](http://qiita.com/kumamidori/items/68262ad061a240167e38)
 
-    composer serve
+## License
 
-### Console
-
-    composer web get /
-    composer api get /
-
-### QA
-
-    composer test       // phpunit
-    composer coverage   // test coverate
-    composer cs         // lint
-    composer cs-fix     // lint fix
-    vendor/bin/phptest  // test + cs
-    vendor/bin/phpbuild // phptest + doc + qa
-
-
-## Requirements
-
- * PHP 7.0+
+Public Domain
